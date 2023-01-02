@@ -29,7 +29,7 @@ public class Utilities {
 	}
 	
 	public static Object[][] getTestDataFromExcel(String sheetName) {
-		File excelFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\testdata\\TutorialsNinjaTestData.xlsx");
+		File excelFile = new File(System.getProperty("user.dir")+"/src/main/java/com/tutorialsninja/qa/testdata/TutorialsNinjaTestData.xlsx");
 		XSSFWorkbook workbook = null;
 		try {
 			FileInputStream fisExcel = new FileInputStream(excelFile);
@@ -80,7 +80,7 @@ public class Utilities {
 	public static String captureScreenshot(WebDriver driver,String testName) {
 		
 		File srcScreenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		String destinationScreenshotPath = System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
+		String destinationScreenshotPath = System.getProperty("user.dir")+"/Screenshots/"+testName+".png";
 		
 		try {
 			FileHandler.copy(srcScreenshot,new File(destinationScreenshotPath));

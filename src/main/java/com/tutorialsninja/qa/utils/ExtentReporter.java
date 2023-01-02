@@ -14,7 +14,7 @@ public class ExtentReporter {
 		
 		ExtentReports extentReport = new ExtentReports();
 		
-		File extentReportFile = new File(System.getProperty("user.dir")+"\\test-output\\ExtentReports\\extentReport.html");
+		File extentReportFile = new File(System.getProperty("user.dir")+"/test-output/ExtentReports/extentReport.html");
 		ExtentSparkReporter sparkReporter = new ExtentSparkReporter(extentReportFile);
 		
 		sparkReporter.config().setTheme(Theme.DARK);
@@ -25,7 +25,7 @@ public class ExtentReporter {
 		extentReport.attachReporter(sparkReporter);
 		
 		Properties configProp = new Properties();
-		File configPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\tutorialsninja\\qa\\config\\config.properties");
+		File configPropFile = new File(System.getProperty("user.dir")+"/src/main/java/com/tutorialsninja/qa/config/config.properties");
 		
 		try {
 			FileInputStream fisConfigProp = new FileInputStream(configPropFile);
