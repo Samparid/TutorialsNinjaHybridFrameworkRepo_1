@@ -14,7 +14,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
-
+// comment by Samrat
 public class Utilities {
 	
 	public static final int IMPLICIT_WAIT_TIME=10;
