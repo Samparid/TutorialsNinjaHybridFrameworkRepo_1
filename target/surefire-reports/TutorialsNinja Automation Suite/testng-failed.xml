@@ -6,6 +6,13 @@
   </listeners>
   <test thread-count="5" name="TutorialsNinja Tests(failed)" verbose="0">
     <classes>
+      <class name="com.tutorialsninja.qa.testcases.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyLoginWithValidCredentials" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.qa.testcases.LoginTest -->
       <class name="com.tutorialsninja.qa.testcases.SearchTest">
         <methods>
           <include name="verifySearchWithInvalidProduct"/>
